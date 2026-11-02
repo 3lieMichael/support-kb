@@ -34,3 +34,17 @@ Support desk. Decision records: whoever signed them.
 ---
 
 Exported 2026-10-04 from the `support` repo, `apps/kb/` → `src/`.
+
+## Building this copy
+
+The export came without its build setup. `package.json`, `svelte.config.js`, `vite.config.js`,
+`src/app.html` and `src/routes/+layout.ts` add it back (SvelteKit 2, mdsvex, static adapter).
+
+```
+npm install
+npm run build    # prerenders every page into rendered/
+```
+
+`rendered/` is the kb as the desk sees it. The #4471 split is
+`src/routes/kb/incidents/4471-problems/+page.svx`, rendered as
+`rendered/kb/incidents/4471-problems.html` (screenshot: `rendered/4471-problems.png`).

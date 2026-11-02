@@ -1,0 +1,65 @@
+---
+layout: runbook
+title: '#4471 · three problems, not one'
+owner: support desk
+status: draft
+reviewed: 2026-11-02
+signature: Elie Ngandu
+---
+
+<script>
+  import ProblemTable from '#lib/kb/ProblemTable.svelte';
+  import Callout from '#lib/kb/Callout.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+
+  const tickets = {
+    parser: 'https://github.com/3lieMichael/support-kb/issues/1',
+    hint: 'https://github.com/3lieMichael/support-kb/issues/2',
+    'one-day': 'https://github.com/3lieMichael/support-kb/issues/3',
+  };
+</script>
+
+[#4471](/kb/incidents/4471) was merged by subject line ([decision 0001](/kb/decisions/0001-dedupe-by-subject))
+and marked known: one issue, one fix queued. Read by tenant and by what each report says, the
+reports in it come from three different problems. Each now has its own ticket.
+
+<Callout kind="warn">
+Fixing the parser does not close #4471. The other two problems stay open after that fix ships.
+</Callout>
+
+## The problems
+
+<ProblemTable ticket={4471} {tickets} />
+
+### `parser`: the shared parser reads dates month first
+
+Every tenant on file writes the day first. The shared parser reads every date month first, so a
+date with both parts at 12 or below comes out with day and month swapped: a 7 April booking
+lands on 4 July. This is the bug #4471 names. It covers every report from a day-first tenant
+that did not come in through a form showing a month-first hint, and that is not a one-day move.
+
+### `hint`: booking-v3 tells day-first tenants to type month first
+
+booking-v3 prints `MM/DD/YYYY` under its date field. The tenant's people type what the hint
+says, month first, and the form reads the date the tenant's way, day first. The date flips
+before the parser sees it, so the parser fix does not touch it. It covers reports from tenants
+on booking-v3 that came in through the form. Intake tags these by the reporter's browser, so
+the `hint` tag and this problem disagree; the tenant decides, as in `causes.ts`.
+
+### `one-day`: the date moves one day, not a month
+
+These reports do not describe a swap. The booking moves back by one day: Tuesday becomes
+Monday, a client in Lisbon gets Tuesday and a client in Toronto gets Monday, an invite arrives
+before the booking was made, every June booking is one day off. A day/month swap cannot do
+that. The desk already marked them in `desk-notes.json` and counted them under `parser` by
+tenant. They are a separate problem with a separate fix, most likely in how a date is converted
+between time zones.
+
+## What changes on the desk
+
+- Matching on subject line put three problems in one ticket. When reports in one ticket
+  describe different changes to a date, split it, even if the subjects match.
+- Count a problem by the tenant and what the report says, not by the intake tag.
+- The export repeats some reports across pages. Count each id once.
+
+<RenderStamp {signature} />
