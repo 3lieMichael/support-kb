@@ -24,7 +24,7 @@ and marked known: one issue, one fix queued. Read by tenant and by what each rep
 reports in it come from three different problems. Each now has its own ticket.
 
 <Callout kind="warn">
-Fixing the parser does not close #4471. The other two problems stay open after that fix ships.
+Fixing the parser fixes one of the three. The other two need their own decisions.
 </Callout>
 
 ## The problems
@@ -54,6 +54,19 @@ before the booking was made, every June booking is one day off. A day/month swap
 that. The desk already marked them in `desk-notes.json` and counts them under `parser`, where
 they are filed by tenant; the table keeps that count. They are a separate problem with a
 separate fix, most likely in how a date is converted between time zones.
+
+## After #4471 closed
+
+Engineering closed #4471 on 5 October:
+
+- `parser`: fixed by `fix(dates): parse dd/mm for eu locales`. Ticket closed.
+- `hint`: won't fix, because the booking-v3 form is retired. Ticket closed.
+- `one-day`: not in the engineering update, and the parser fix cannot touch a one-day shift.
+  Its ticket stays open.
+
+<Callout kind="warn">
+#4471 is closed, but <code>one-day</code> is not fixed. Route new one-day reports to its ticket, not to #4471.
+</Callout>
 
 ## What changes on the desk
 
