@@ -1,0 +1,72 @@
+README.md
+  h_9247d25038250e 1-36
+src/lib/data/desk-notes.json
+  h_9247d25038250e 1-9
+src/lib/data/reports-4471.json
+  h_9247d25038250e 1-5980
+src/lib/data/tenants/alder.physio.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/copper.studio.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/harbour.dental.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/kettle.books.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/lantern.row.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/long.table.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/morrow.tax.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/nine.lanterns.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/pale.harbour.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/ridge.clinic.json
+  h_9247d25038250e 1-6
+src/lib/data/tenants/stone.and.sons.json
+  h_9247d25038250e 1-6
+src/lib/kb/Callout.svelte
+  h_9247d25038250e 1-12
+src/lib/kb/CauseTable.svelte
+  h_9247d25038250e 1-56
+src/lib/kb/DedupeExplorer.svelte
+  h_9247d25038250e 1-48
+src/lib/kb/KbIndex.svelte
+  h_9247d25038250e 1-28
+src/lib/kb/QueueTimeline.svelte
+  h_9247d25038250e 1-50
+src/lib/kb/RenderStamp.svelte
+  h_9247d25038250e 1-20
+src/lib/kb/causes.ts
+  h_9247d25038250e 1-97
+src/lib/kb/dedupe-cases.ts
+  h_9247d25038250e 1-31
+src/lib/kb/desk-ref.ts
+  h_9247d25038250e 1-27
+src/lib/kb/locales.ts
+  h_9247d25038250e 1-15
+src/lib/kb/staleness.ts
+  h_9247d25038250e 1-13
+src/lib/layouts/runbook.svelte
+  h_9247d25038250e 1-62
+src/routes/kb/+page.svx
+  h_9247d25038250e 1-25
+src/routes/kb/decisions/0001-dedupe-by-subject/+page.svx
+  h_9247d25038250e 1-25
+src/routes/kb/incidents/4471/+page.svx
+  h_9247d25038250e 1-36
+src/routes/kb/triage/dedupe/+page.svx
+  h_9247d25038250e 1-37
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "627288e0d01b7d82d739a1d76a4f2a5d6f179174",
+  "prompts": {},
+  "humans": {
+    "h_9247d25038250e": {
+      "author": "Elie Ngandu <elie.ngandu@fleetworthy.com>"
+    }
+  }
+}
