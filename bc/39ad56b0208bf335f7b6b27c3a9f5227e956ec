@@ -1,0 +1,45 @@
+src/routes/kb/incidents/4471-problems/+page.svx
+  s_9d9a0fd210a26f::t_291dd56a46f462 7
+rendered/_app/immutable/chunks/CpfR3uCC.js
+  s_9d9a0fd210a26f::t_dce2a2e6873aaa 1
+rendered/_app/immutable/chunks/RTzQWIQp.js
+  s_9d9a0fd210a26f::t_7c824f105025d1 1,17
+rendered/_app/immutable/entry/app.DhL-ZMrt.js
+  s_9d9a0fd210a26f::t_8f52af52646b28 1-2
+rendered/_app/immutable/entry/start.DaTwTua1.js
+  s_9d9a0fd210a26f::t_4f5257e666755c 1
+rendered/_app/immutable/nodes/1.dN7ShIKX.js
+  s_9d9a0fd210a26f::t_67ee6de57d3a97 1
+rendered/_app/immutable/nodes/2.Dq4Ghwg-.js
+  s_9d9a0fd210a26f::t_592ac98520e80e 1
+rendered/_app/immutable/nodes/5.FyUvE5Pr.js
+  s_9d9a0fd210a26f::t_e09edae8d156ae 1
+rendered/_app/version.json
+  s_9d9a0fd210a26f::t_1cff4b2228930d 1
+rendered/kb.html
+  s_9d9a0fd210a26f::t_2252db38eeb136 6,8,10,17,20,39,46-47
+rendered/kb/decisions/0001-dedupe-by-subject.html
+  s_9d9a0fd210a26f::t_0c89bcd519c3a9 6,8,10,31,38-39
+rendered/kb/incidents/4471-problems.html
+  s_9d9a0fd210a26f::t_88e071fe140d72 6,8,10,17-18,44,48,55-56
+rendered/kb/incidents/4471.html
+  s_9d9a0fd210a26f::t_7550b412b7ad04 6,8,10,34,41-42
+rendered/kb/triage/dedupe.html
+  s_9d9a0fd210a26f::t_67881727dfa0d8 6,8,10,34,41-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bc39ad56b0208bf335f7b6b27c3a9f5227e956ec",
+  "prompts": {},
+  "sessions": {
+    "s_9d9a0fd210a26f": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "51d70c79-5125-4187-8ec6-a9d741241678",
+        "model": "copilot/claude-opus-5.5"
+      },
+      "human_author": "Elie Ngandu <elie.ngandu@fleetworthy.com>"
+    }
+  }
+}
