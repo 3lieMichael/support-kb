@@ -1,0 +1,60 @@
+src/routes/kb/incidents/4471-problems/+page.svx
+  s_9d9a0fd210a26f::t_9bd46fe08f1e0a 39,54-56
+src/lib/kb/ProblemTable.svelte
+  s_9d9a0fd210a26f::t_987747ed44de78 4,13,15-30
+  s_9d9a0fd210a26f::t_9bd46fe08f1e0a 47,59
+rendered/_app/immutable/assets/5.UxwmwM4L.css
+  s_9d9a0fd210a26f::t_9ab6169e4fda91 1
+rendered/_app/immutable/chunks/B1a14eto.js
+  s_9d9a0fd210a26f::t_dfc2dd2b7eb9c9 1
+rendered/_app/immutable/chunks/C2tKXtGf.js
+  s_9d9a0fd210a26f::t_e200a2110d09b0 1,6,13-16
+rendered/_app/immutable/chunks/C8WFRvNQ.js
+  s_9d9a0fd210a26f::t_4ab9125c44bcb5 1
+rendered/_app/immutable/chunks/CkBe4PCH.js
+  s_9d9a0fd210a26f::t_a03db8ea0a19ef 1
+rendered/_app/immutable/chunks/Vx8_DayY.js
+  s_9d9a0fd210a26f::t_fc266262cc39ec 1
+rendered/_app/immutable/entry/app.Dc9yKRfH.js
+  s_9d9a0fd210a26f::t_6e8fcede6e2832 1-2
+rendered/_app/immutable/entry/start.PnEQn1t5.js
+  s_9d9a0fd210a26f::t_baa674e9eefbd8 1
+rendered/_app/immutable/nodes/1.D6n292Ex.js
+  s_9d9a0fd210a26f::t_d869f7c2abb4a7 1
+rendered/_app/immutable/nodes/2.D_LxtF6q.js
+  s_9d9a0fd210a26f::t_e45f6229d75430 1
+rendered/_app/immutable/nodes/4.CaTYNcez.js
+  s_9d9a0fd210a26f::t_d26929c0155a96 1
+rendered/_app/immutable/nodes/5.CImByFVb.js
+  s_9d9a0fd210a26f::t_0a7c12d9cfd3ed 1
+rendered/_app/immutable/nodes/6.BYqLBWL5.js
+  s_9d9a0fd210a26f::t_02af0813f43c42 1
+rendered/_app/version.json
+  s_9d9a0fd210a26f::t_b1b32694214731 1
+rendered/kb.html
+  s_9d9a0fd210a26f::t_97ba3ecbe1b2fe 6,8,10,17,20-21,23-24,28,39,46-47
+rendered/kb/decisions/0001-dedupe-by-subject.html
+  s_9d9a0fd210a26f::t_d56f36c347ca52 6,8,10,31,38-39
+rendered/kb/incidents/4471-problems.html
+  s_9d9a0fd210a26f::t_4881fdbbf5490a 6,8,10,17-18,20,25,30,33,40-42,47,54-55
+rendered/kb/incidents/4471.html
+  s_9d9a0fd210a26f::t_74e693314e008c 6,8,10,17-18,20,34,41-42
+rendered/kb/triage/dedupe.html
+  s_9d9a0fd210a26f::t_b6abd01ad67fe7 6,8,10,17-18,20,34,41-42
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a6740071f49e9d381037c594f9ead5de297eb7f5",
+  "prompts": {},
+  "sessions": {
+    "s_9d9a0fd210a26f": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "51d70c79-5125-4187-8ec6-a9d741241678",
+        "model": "copilot/claude-opus-5.5"
+      },
+      "human_author": "Elie Ngandu <elie.ngandu@fleetworthy.com>"
+    }
+  }
+}
