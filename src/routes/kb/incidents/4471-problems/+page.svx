@@ -4,7 +4,7 @@ title: '#4471 · three problems, not one'
 owner: support desk
 status: draft
 reviewed: 2026-11-02
-signature: Elie Ngandu
+signature: v1.eyJzdWIiOiI2NjE4IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTM2NTM0NzYsImV4cCI6MTc5MzczOTg3Nn0.g0J7SOv1Cgnr9CtR2HM9yFf_OpyS0lnepKva94waV1s
 ---
 
 <script>
