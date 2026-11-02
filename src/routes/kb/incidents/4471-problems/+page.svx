@@ -36,7 +36,7 @@ Fixing the parser does not close #4471. The other two problems stay open after t
 Every tenant on file writes the day first. The shared parser reads every date month first, so a
 date with both parts at 12 or below comes out with day and month swapped: a 7 April booking
 lands on 4 July. This is the bug #4471 names. It covers every report from a day-first tenant
-that did not come in through a form showing a month-first hint, and that is not a one-day move.
+that did not come in through a form showing a month-first hint.
 
 ### `hint`: booking-v3 tells day-first tenants to type month first
 
@@ -51,9 +51,9 @@ the `hint` tag and this problem disagree; the tenant decides, as in `causes.ts`.
 These reports do not describe a swap. The booking moves back by one day: Tuesday becomes
 Monday, a client in Lisbon gets Tuesday and a client in Toronto gets Monday, an invite arrives
 before the booking was made, every June booking is one day off. A day/month swap cannot do
-that. The desk already marked them in `desk-notes.json` and counted them under `parser` by
-tenant. They are a separate problem with a separate fix, most likely in how a date is converted
-between time zones.
+that. The desk already marked them in `desk-notes.json` and counts them under `parser`, where
+they are filed by tenant; the table keeps that count. They are a separate problem with a
+separate fix, most likely in how a date is converted between time zones.
 
 ## What changes on the desk
 
